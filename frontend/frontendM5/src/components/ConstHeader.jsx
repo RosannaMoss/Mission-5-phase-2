@@ -7,6 +7,7 @@ import WatchlistIcon from "../assets/Group.png"
 import FavouritesIcon from "../assets/line-md_heart.png"
 import StartListingIcon from "../assets/prime_pencil.png"
 import MyTradeMeIcon from "../assets/lucide_circle-user-round.png"
+import SearchIcon from "../assets/searchIcon.png"
 
 export default function ConstHeader() {
   return (
@@ -39,9 +40,10 @@ export default function ConstHeader() {
             <span className={styles.dropdownArrow}>▼</span>
 </div>
 <div className={styles.searchInputContainer}>
+<img className={styles.searchIcon} src={SearchIcon}></img>
+
   <input type="text" placeholder="Search" />
   <button className={styles.searchButton}>
-              <FaSearch />
             </button>
           </div>
         </div>

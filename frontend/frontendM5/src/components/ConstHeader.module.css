@@ -2,27 +2,32 @@
   width: 100%;
   background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
 }
 
 .topNav {
   background-color: #f7f5f4;
-  padding: 8px 32px;
+  padding: 10px 120px;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  
 }
 
+.navLinks{
+  gap: 50px
+}
 
+.authLinks {
+  gap: 40px
+}
 
 .navLinks, .authLinks {
   display: flex;
-  gap: 20px;
+  /* gap: 25px; */
+  color: #9D9996
 }
 
 .navLinks a, .authLinks a {
-  color: #646161;
+  color: #9D9996;
   text-decoration: none;
   font-family: inherit;
 }
@@ -51,6 +56,8 @@
   align-items: center;
   max-width: 600px;
   margin-right: auto;
+  color: #8A8685;
+
 }
 
 .browseDropdown {
@@ -63,6 +70,7 @@
   position: relative;
   font-family: inherit;
   font-size: 14px;
+  color: #8A8685;
 }
 
 .browseDropdown::after {
@@ -79,6 +87,11 @@
 .dropdownArrow {
   font-size: 10px;
   color: #666;
+}
+
+.searchIcon{
+  height: 15px;
+  padding-left: 20px;
 }
 
 .searchInputContainer {
@@ -168,7 +181,7 @@
 }
 
 @media (max-width: 768px) {
-  .browse-dropdown {
+  .browseDropdown {
     display: none;
   }
   
